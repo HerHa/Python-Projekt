@@ -1,0 +1,24 @@
+[project]
+name="python_projekt"
+version="0.1.0"
+description="A simple web shop application"
+readme="README.md"
+authors = [
+    { name = "herha", email = "" }
+]
+requires-python = ">=3.15"
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "sqlalchemy",
+    "pydantic",
+    "pytest",
+    "httpx"
+]
+
+[project.scripts]
+python-projekt = "python_projekt:main"
+
+[build-system]
+requires = ["uv_build>=0.13.1, <0.14.0"]
+build-backend = "uv_build"
